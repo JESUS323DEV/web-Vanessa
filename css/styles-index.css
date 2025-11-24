@@ -31,7 +31,8 @@ h6 {
 
 p,
 a,
-li {
+li,
+label {
     font-family: "Funnel Display", sans-serif;
 }
 
@@ -388,6 +389,89 @@ main {
     font-size: 1.1rem;
 }
 
+/*==========================FORMULARIO===============================================*/
+.input-wrap {
+
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+
+
+.icono {
+    position: absolute;
+    color: rgb(71, 71, 71);
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+
+}
+
+.cont-formu {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.style-name,
+.style-fono,
+.style-email,
+.style-textarea {
+
+    display: flex;
+    gap: 0.1rem;
+    flex-direction: column;
+    width: 70%;
+}
+
+.style-textarea textarea {
+
+    padding: 0.4rem;
+    outline: none;
+    height: 95px;
+
+}
+
+
+.style-name input,
+.style-fono input,
+.style-email input {
+    height: 39px;
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid rgb(148, 148, 148);
+    border-radius: 0.2rem;
+
+    width: 100%;
+    padding-right: 35px;
+}
+
+.style-btn {
+
+    margin-bottom: 5rem;
+    margin-top: 1.5rem;
+    width: 100%;
+    text-align: center;
+
+}
+
+.style-btn button {
+
+    background-color: #D9C089;
+    padding: 0.5rem;
+    width: 40%;
+    border: 1px solid rgb(96, 96, 96);
+    border-radius: 0.3rem;
+
+
+}
+
 /*===========================Footer===============================================*/
 .foot-xxl {
 
@@ -633,10 +717,31 @@ a {
         grid-column: 1/ -1;
         width: 50%;
         margin: auto;
-
-
     }
 
+
+    /*===========================HERO===============================================*/
+
+    .style-name,
+    .style-fono,
+    .style-email,
+    .style-textarea {
+
+        display: flex;
+        gap: 0.1rem;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .icono {
+        position: absolute;
+        color: rgb(71, 71, 71);
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+
+    }
 
 }
 
@@ -820,6 +925,94 @@ a {
         object-fit: cover !important;
     }
 
+    /*===========================CONTACTO===============================================*/
+    .cont-contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0;
+        background-color: transparent;
+
+
+    }
+
+    .cont-contacto h4 {
+        font-size: 1.2rem;
+        padding-bottom: 0.3rem;
+        margin: 0;
+        border-bottom: 1px solid #f1b127;
+    }
+
+    .cont-contacto p a {
+        text-decoration: none;
+        color: #000000;
+
+    }
+
+    .cont-contacto p i {
+
+        color: rgb(6, 129, 0);
+        font-size: 1.8rem;
+    }
+
+    .cont-contacto p {
+
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+    }
+
+    /*===========================FORMULARIO==============================================*/
+    .reserva-contacto {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 10rem;
+
+    }
+
+    .cont-formu {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .style-name,
+    .style-fono,
+    .style-email,
+    .style-textarea {
+
+        display: flex;
+        gap: 0.1rem;
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .style-btn {
+
+        margin-bottom: 5rem;
+        margin-top: 0.5rem;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .style-btn button {
+
+        background-color: #D9C089;
+        padding: 0.5rem;
+        width: 40%;
+        border: 1px solid rgb(96, 96, 96);
+        border-radius: 0.3rem;
+
+
+    }
+
+
+
     /*===========================Footer===============================================*/
     .foot-xxl {
 
@@ -933,6 +1126,352 @@ a {
         color: rgb(255, 255, 255);
         padding: 5px;
         z-index: 9999;
+
+    }
+
+    /*===========================HEADER===============================================*/
+
+    #inicio,
+    #aboutMe,
+    #miLabor,
+    #contacto {
+        scroll-margin-top: 5rem !important;
+        /* lo que mida tu nav fijo */
+    }
+
+    .styleH2 {
+
+        font-size: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .cont-header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem;
+
+    }
+
+    .menuList {
+        position: static;
+        height: auto;
+        width: auto;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menuList li {
+
+        border-bottom: none;
+        font-size: 1rem;
+        padding: 1rem 0 0 1.5rem;
+    }
+
+    .cont-header ul {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 1rem;
+        list-style: none;
+    }
+
+
+    .btn-hamburger {
+
+        display: none;
+    }
+
+    #listMenu.ocultoMenu {
+        display: block;
+    }
+
+    .xxl-none {
+
+        display: none !important;
+    }
+
+    /*===========================HERO===============================================*/
+
+    .bg-hero {
+        min-height: 85vh !important;
+    }
+
+    .cont-hero h1 {
+        margin: 0;
+        color: var(--color-principal);
+        font-size: 4rem;
+        text-align: center;
+
+
+
+    }
+
+
+    .cont-hero p {
+
+        font-size: 1.6rem;
+        margin: 0;
+        text-align: center;
+        color: var(--color-secundario);
+
+    }
+
+    .cont-hero a {
+
+        color: black;
+        text-decoration: none;
+        border: 1px solid #000000;
+        padding: 0.5rem;
+        background-color: var(--color-principal);
+        border-radius: 0.4rem;
+    }
+
+    /*===========================SOBRE MI ===============================================*/
+
+    .cont-text h3 {
+
+        font-size: 2rem;
+        border-bottom: 1px solid var(--color-principal);
+        margin: 0;
+
+
+
+    }
+
+    .cont-text p {
+        margin: 0;
+        line-height: 1.7;
+        width: 90%;
+        margin: auto;
+        font-size: 1.2rem;
+        padding-top: 1rem;
+
+        text-align: center;
+
+    }
+
+    /*===========================PROYECTOS===============================================*/
+
+
+    .grid-cont {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card1 {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 2rem;
+
+    }
+
+
+
+    .card1 img {
+
+        width: 100%;
+    }
+
+
+    .img-wrapper {
+        width: 100% !important;
+        aspect-ratio: 16 / 9 !important;
+        overflow: hidden !important;
+    }
+
+    .img-wrapper img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+
+    /*===========================CONTACTO===============================================*/
+    .cont-contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0;
+        background-color: transparent;
+
+
+    }
+
+    .cont-contacto h4 {
+        font-size: 1.8rem;
+        padding-bottom: 0.3rem;
+        margin: 0;
+        border-bottom: 1px solid #f1b127;
+    }
+
+    .cont-contacto p a {
+        text-decoration: none;
+        color: #000000;
+
+    }
+
+    .cont-contacto p i {
+
+        color: rgb(6, 129, 0);
+        font-size: 1.8rem;
+    }
+
+    .cont-contacto p {
+
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+    }
+
+    /*===========================FORMULARIO==============================================*/
+    .reserva-contacto {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 10rem;
+    }
+
+    .cont-formu {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .style-name,
+    .style-fono,
+    .style-email,
+    .style-textarea {
+
+        display: flex;
+        gap: 0.1rem;
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .style-btn {
+
+        margin-bottom: 5rem;
+        margin-top: 0.5rem;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .style-btn button {
+
+        background-color: #D9C089;
+        padding: 0.5rem;
+        width: 40%;
+        border: 1px solid rgb(96, 96, 96);
+        border-radius: 0.3rem;
+
+
+    }
+
+    /*===========================Footer===============================================*/
+    .foot-xxl {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+
+
+    }
+
+    .cont-footer {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 3rem;
+    }
+
+
+
+
+    .cont-footer h5 {
+
+        color: white;
+        text-align: center;
+        border-bottom: 1px solid var(--color-border-card);
+        padding-bottom: 0.3rem;
+
+    }
+
+
+    .title-body {
+
+        grid-column: 1/ -1;
+    }
+
+    .title-body img {
+
+        width: 150px;
+        height: auto;
+        padding-top: 1rem;
+    }
+
+    .title-body {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+
+
+
+
+
+
+    .body-politica,
+    .body-contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+
+
+    }
+
+    .body-contacto p,
+    .body-politica p {
+
+        padding-bottom: 1rem;
+        font-size: 1rem;
+        text-align: left;
+
+    }
+
+
+    .foot-footer {
+
+        grid-column: 1/ -1;
+        text-align: center;
+        padding: 1rem;
+
+    }
+
+    .cont-footer p,
+    a {
+
+        margin: 0;
+        color: #dddddd;
+        text-decoration: none;
 
     }
 }
@@ -1078,6 +1617,7 @@ a {
 
     /*===========================PROYECTOS===============================================*/
 
+
     .grid-cont {
 
         display: grid;
@@ -1114,6 +1654,91 @@ a {
         width: 100% !important;
         height: 100% !important;
         object-fit: cover !important;
+    }
+
+    /*===========================CONTACTO===============================================*/
+    .cont-contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0;
+        background-color: transparent;
+
+
+    }
+
+    .cont-contacto h4 {
+        font-size: 1.8rem;
+        padding-bottom: 0.3rem;
+        margin: 0;
+        border-bottom: 1px solid #f1b127;
+    }
+
+    .cont-contacto p a {
+        text-decoration: none;
+        color: #000000;
+
+    }
+
+    .cont-contacto p i {
+
+        color: rgb(6, 129, 0);
+        font-size: 1.8rem;
+    }
+
+    .cont-contacto p {
+
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+    }
+
+    /*===========================FORMULARIO==============================================*/
+    .reserva-contacto {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 10rem;
+    }
+
+    .cont-formu {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .style-name,
+    .style-fono,
+    .style-email,
+    .style-textarea {
+
+        display: flex;
+        gap: 0.1rem;
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .style-btn {
+
+        margin-bottom: 5rem;
+        margin-top: 0.5rem;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .style-btn button {
+
+        background-color: #D9C089;
+        padding: 0.5rem;
+        width: 40%;
+        border: 1px solid rgb(96, 96, 96);
+        border-radius: 0.3rem;
+
+
     }
 
     /*===========================Footer===============================================*/
@@ -1393,17 +2018,14 @@ a {
         object-fit: cover !important;
     }
 
-    /*===========================Contacto===============================================*/
-
+    /*===========================CONTACTO===============================================*/
     .cont-contacto {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 2rem 0;
-        background-color: rgba(238, 238, 238, 0.433);
-        padding: 5rem 0;
-
+        background-color: transparent;
 
 
     }
@@ -1413,7 +2035,6 @@ a {
         padding-bottom: 0.3rem;
         margin: 0;
         border-bottom: 1px solid #f1b127;
-        margin-bottom: 1rem;
     }
 
     .cont-contacto p a {
@@ -1431,7 +2052,58 @@ a {
     .cont-contacto p {
 
         margin-bottom: 2rem;
-        font-size: 1.4rem;
+        font-size: 1.1rem;
+    }
+
+    /*===========================FORMULARIO==============================================*/
+    .reserva-contacto {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 10rem !important;
+
+        width: 80%;
+        margin: auto;
+    }
+
+    .cont-formu {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .style-name,
+    .style-fono,
+    .style-email,
+    .style-textarea {
+
+        display: flex;
+        gap: 0.1rem;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .style-btn {
+
+        margin-bottom: 5rem;
+        margin-top: 0.5rem;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .style-btn button {
+
+        background-color: #D9C089;
+        padding: 0.5rem;
+        width: 40%;
+        border: 1px solid rgb(96, 96, 96);
+        border-radius: 0.3rem;
+
+
     }
 
     /*===========================Footer===============================================*/
